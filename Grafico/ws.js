@@ -25,5 +25,5 @@ const ws = new WebSocket('wss://stream.binance.com:9443/ws/ethbrl@bookTicker')
     console.log(cont);
 
 }
-var conta=9;
+
 
