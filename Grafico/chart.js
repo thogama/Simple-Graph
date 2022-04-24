@@ -1,11 +1,11 @@
-document.getElementById("basedate").innerHTML = (`${new Date()}`)
+document.getElementById("basedate").innerHTML = (`Started at ${new Date().toLocaleTimeString()}`)
 var ctx = document.getElementsByClassName("line-chart");
 var chartGraph = new Chart(ctx,{
     type: "line",
     data:{
         labels:[""],
         datasets: [{
-            label: "Preço",
+            label: "Price Variation %",
             data: [],
             borderWidth: 3,
             borderColor: 'rgba(100,200,100,0.85)',
@@ -31,4 +31,6 @@ function removeData(chartGraph) {
     });
     chartGraph.update();
 }
+
+
 

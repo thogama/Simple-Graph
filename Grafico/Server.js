@@ -14,7 +14,7 @@ app.use(express.static('Grafico'));
 
 app.listen(process.env.port || 3000);
 
-console.log("rodando");
+console.log("running at http://localhost:3000/");
 
 
 

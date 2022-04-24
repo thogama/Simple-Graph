@@ -1,7 +1,8 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Meu grafico</title>
+    <title>Graph</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src=https://cdnjs.cloudflare.com/ajax/libs/web-socket-js/1.0.0/web_socket.min.js></script>
@@ -13,10 +14,13 @@
 </head>
 <body>
     
-    <h2>ETH/BRL</h2>
+    <h2>ETH/USDT</h2>
+    <h3>Price variation per transaction</h3>
     <p1 id="basedate"></p1>
     <div id ="Results"></div>
+    <div id="ready_chart">
     <canvas class="line-chart"></canvas>
+    </div>
     <script src = "chart.js"></script>
     <script src="ws.js"></script>
 
